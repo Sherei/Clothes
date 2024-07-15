@@ -15,7 +15,7 @@ const Top = () => {
     return <>
         <div className="container mt-5">
             <div className="row">
-                <div className="col-12"><h1 className='home_heading text-center mb-5'>TOP SELLING</h1></div>
+               <h1 className='home_heading text-center mb-5'>TOP SELLING</h1>
             </div>
             <div className='h_box_main'>
                 {data.map((item, index) => {

@@ -93,6 +93,7 @@
 .hero_btn:hover .button-text {
     color: #fff;
 }
+
 .home_card div {
     padding: 0px 10px;
     border-right: 1px solid lightgray;
@@ -101,24 +102,32 @@
 .home_card h1 {
     font-weight: 700;
 }
-.hero_slide{
+
+.hero_slide {
     max-width: 100%;
     max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home_img{
+
+.home_img {
     max-height: 500px;
 }
+
 @media screen and (max-width:768px) {
-.home_card{
-    display: flex;
-    justify-content: center;
+    .home_card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home_heading {
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
-}
-@media screen and (max-width:1000px) {
+@media screen and (min-width:769px)  and (max-width:1000px){
     .home_heading {
         font-size: 40px;
         font-weight: 800;
