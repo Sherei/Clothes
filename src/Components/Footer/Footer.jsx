@@ -6,7 +6,7 @@ const Footer = () => {
             {/* Footer */}
             <footer className="text-center text-lg-start" style={{ backgroundColor: "#F0EEED" }} >
                 {/* Section: Social media */}
-                <section className="container d-flex justify-content-lg-between p-4 border-bottom">
+                <section className="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                     <div className="me-5 d-none d-lg-block fw-bold">
                         <span>Get connected with us on social networks:</span>
                     </div>
@@ -29,7 +29,7 @@ const Footer = () => {
                 {/* Section: Social media */}
                 {/* Section: Links  */}
                 <section className="">
-                    <div className="container text-center text-md-start mt-5">
+                    <div className="container  text-md-start mt-5">
                         {/* Grid row */}
                         <div className="row mt-3">
                             {/* Grid column */}
