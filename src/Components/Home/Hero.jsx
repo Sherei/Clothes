@@ -8,7 +8,7 @@ const Hero = () => {
     return <>
         <div className='container-fluid' style={{ backgroundColor: "#F2F0F1" }}>
             <div className='row'>
-                <div className='col-lg-6 col-md-6 col-sm-12 px-5 pt-5'>
+                <div className='col-lg-6 col-md-6 col-sm-12 px-lg-5 px-md-5 px-sm-3 pt-5'>
                     <h1 className='home_heading'>FIND CLOTHES <br />THAT MATCHES <br /> YOUR STYLE</h1>
                     <p className=''>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                     <button class="hero_btn learn-more">
