@@ -36,7 +36,7 @@ const Hero = () => {
                 </div>
                 <div className='col-lg-6 col-md-6 col-sm-12 px-5'>
                     <div>
-                        <img src="home.png" className='home_img img-fluid' alt="" />
+                        <img src="/home.png" className='home_img img-fluid' alt="" />
                     </div>
                 {/* <Swiper
                         slidesPerView={1}
