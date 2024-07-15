@@ -7,29 +7,29 @@ const Category = () => {
             <div className='row'>
             <div className='col-lg-12 col-md-12 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="12173.jpg" className='img-fluid' alt="" />
+                        <img src="/12173.jpg" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="frame 62.png" className='img-fluid' alt="" />
+                        <img src="/frame62.png" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="frame 61.png" className='img-fluid' alt="" />
+                        <img src="/frame61.png" className='img-fluid' alt="" />
                     </div>
                 </div>
             </div>
             <div className='row '>
                 <div className='col-lg-5 col-md-5 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="frame 63.png" className='img-fluid' alt="" />
+                        <img src="/frame63.png" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="frame 64.png" className='img-fluid' alt="" />
+                        <img src="/frame64.png" className='img-fluid' alt="" />
                     </div>
                 </div>
             </div>
