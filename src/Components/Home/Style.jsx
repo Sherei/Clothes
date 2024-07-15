@@ -7,7 +7,7 @@ const Style = () => {
             <div className='row'>
                 <div className='col-lg-5 col-md-5 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="/frame61.png" className='img-fluid' alt="" />
+                        <img src="/Frame 33.png" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-12 mt-4'>
