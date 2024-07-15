@@ -12,24 +12,24 @@ const Category = () => {
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="/frame62.png" className='img-fluid' alt="" />
+                        <img src="/formal.png" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="/frame61.png" className='img-fluid' alt="" />
+                        <img src="/casual.png" className='img-fluid' alt="" />
                     </div>
                 </div>
             </div>
             <div className='row '>
                 <div className='col-lg-5 col-md-5 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="/frame63.png" className='img-fluid' alt="" />
+                        <img src="/gym.png" className='img-fluid' alt="" />
                     </div>
                 </div>
                 <div className='col-lg-7 col-md-7 col-sm-12 mt-4'>
                     <div className='style_card'>
-                        <img src="/frame64.png" className='img-fluid' alt="" />
+                        <img src="/party.png" className='img-fluid' alt="" />
                     </div>
                 </div>
             </div>
