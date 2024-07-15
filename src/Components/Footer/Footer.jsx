@@ -29,7 +29,7 @@ const Footer = () => {
                 {/* Section: Social media */}
                 {/* Section: Links  */}
                 <section className="">
-                    <div className="container  text-md-start mt-5">
+                    <div className="container  text-start mt-5">
                         {/* Grid row */}
                         <div className="row mt-3">
                             {/* Grid column */}
@@ -90,17 +90,17 @@ const Footer = () => {
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                                 <p>
-                                    <i className="fas fa-home me-3" /> Faisalabad, Punjab, Pakistan
+                                    <i className="fas fa-home " /> Faisalabad, Punjab, Pakistan
                                 </p>
                                 <p>
-                                    <i className="fas fa-envelope me-3" />
+                                    <i className="fas fa-envelope" />
                                     sharjeelakhtar245@gmail.com
                                 </p>
                                 <p>
-                                    <i className="fas fa-phone me-3" /> +923067208343
+                                    <i className="fas fa-phone" /> +923067208343
                                 </p>
                                 <p>
-                                    <i className="fas fa-print me-3" /> +923419285604
+                                    <i className="fas fa-print" /> +923419285604
                                 </p>
                             </div>
                             {/* Grid column */}
