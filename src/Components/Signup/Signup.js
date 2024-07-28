@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { toast } from "react-toastify";
 import axios from 'axios';
+import "./signup.css"
 
 const Signup = () => {
 
@@ -58,6 +59,7 @@ const Signup = () => {
                         {Error &&
                             <div className='error mb-3 py-2'>{Error}</div>
                         }
+
                         <div className="input-group mb-3">
                             <input required="true"
                                 autocomplete="off"
