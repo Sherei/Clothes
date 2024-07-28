@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { toast } from "react-toastify";
-import Benefits from '../Benefits/Benefits';
 import axios from 'axios';
 
 const Signup = () => {
@@ -124,9 +123,9 @@ const Signup = () => {
                     </form>
                 </div>
             </div>
-            <div className='row '>
+            {/* <div className='row '>
                 <Benefits />
-            </div>
+            </div> */}
         </div>
     </>
 }

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router'
 import { useSelector, useDispatch } from 'react-redux';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import Benefits from '../Benefits/Benefits';
+// import Benefits from '../Benefits/Benefits';
 import axios from 'axios';
 import "./login.css"
 
@@ -129,9 +129,9 @@ export const Login = () => {
           </form>
         </div>
       </div>
-      <div className='row '>
+      {/* <div className='row '>
         <Benefits />
-      </div>
+      </div> */}
     </div>
   </>
 
