@@ -1,83 +1,157 @@
-.login-btns {
+.form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 0px;
-}
-
-.login-btns button {
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 35px;
-    background-color: #F7F7F7;
-    color: #A5A5A5;
-
-}
-.password-toggle-btn{
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-.login_btn {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+  }
+  
+  .form button {
+    align-self: flex-end;
     width: 100%;
-    color: white;
-    border: none;
-    outline: none;
-    padding: 10px; 
-    background-color: #1b2950 !important;
 }
-
-.login_form_input {
-    outline: none;
-    padding: 15px 5px 15px 10px;
-}
-.form_icon{
-    position: absolute;
-    top: 3px;
-    left: 8px;
-    color:#1b2950;
-}
-.login_btn:hover {
-    color: white;
-
-}
-
-.login_form_input:focus {
-    outline: none;
-    border: none;
-}
-
-.register_btn {
-    cursor: pointer;
-    color: darkblue;
+  
+  .flex-column > label {
+    color: #151717;
     font-weight: 600;
-    border-bottom: 1px solid darkblue;
-}
-
-.active_btn {
-    border: none !important;
-    outline: none !important;
-    color: white !important;
-    font-weight: 600;
-    background-color: #1b2950 !important;
-    transition: all ease-in-out 0.5s;
-}
-.form_label{
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
     display: flex;
     align-items: center;
-    color: #1b2950;
-    gap: 8px;
-    margin: 0px 5px 10px 0px;
-}
-form span{
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 100%;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
     font-size: 15px;
-}
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .button-submit:hover {
+    background-color: #252727;
+  }
+  
+  .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    border: 1px solid #2d79f3;
+    ;
+  }
+  .register_btn{
+    color: royalblue;
+    border-bottom: 1px solid royalblue  ;
+  }
+      
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
 
-@media screen and (max-width:768px) {
-    .hide_div {
-        display: none !important;
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: wave 1.5s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scale(0.5);
+      opacity: 1;
     }
-}
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }

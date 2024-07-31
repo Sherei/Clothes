@@ -274,7 +274,7 @@ const Checkout = () => {
     return <>
 
         <div className='container-fluid '>
-            <div className="row">
+            {/* <div className="row">
                 <div className="col px-0" style={{ position: "relative", width: "100%", height: "280px", overflow: "hidden" }}>
                     <img src="/chk.jpeg" alt="No Network" className='all_img' style={{ width: "100%", height: "100%" }} />
                     <div
@@ -299,7 +299,7 @@ const Checkout = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className='row checkout_display d-flex justify-content-center my-lg-3'>
                 {loading ? (
                     <div className="col-12 d-flex justify-content-center align-items-center" style={{ height: "80vh" }}>

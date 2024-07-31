@@ -144,7 +144,6 @@ export const Orders = () => {
                                   <option value='pending'>Pending</option>
                                   <option value='delivered'>Delivered</option>
                                 </select>
-
                               </td>
                               <td>{data.name1}</td>
                               {/* <td>{data.email}</td> */}

@@ -8,7 +8,7 @@ import Lottie from 'lottie-react';
 import { useDispatch } from "react-redux";
 import userPanel from "../Animations/userPanel.json"
 import axios from 'axios';
-import "./userPanel.css"
+import "./userPanel.css"    
 
 const UserPanel = () => {
 

@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from "react";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { BsCart } from "react-icons/bs";
+import { NavLink } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+import axios from "axios";
 import "./navbar.css"
 
 const Navbar = () => {
+
+  const move = useNavigate();
+  const cu = useSelector((store) => store.userSection.cu);
+  const dispatch = useDispatch();
+
+  function Logout() {
+    dispatch({
+      type: "LOGOUT_USER",
+    });
+    move("/login");
+  }
+
+
   return <>
     <>
       <nav className="navbar navbar-expand-lg navbar-light  px-lg-5 px-sm-3" style={{ backgroundColor: "#F2F0F1" }}>
@@ -21,75 +38,89 @@ const Navbar = () => {
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <a className="navbar-brand" href="#">
-              Navbar
-            </a>
+            <NavLink className="navbar-brand cursor" to="/">
+              <img src="logo.png" alt="" />
+            </NavLink>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <NavLink
                   className="nav-link dropdown-toggle"
-                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Shop
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="/products">
+                    <NavLink className="dropdown-item" to="/products">
                       Clothes
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/products">
+                    <NavLink className="dropdown-item" to="/products">
                       Shoes
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <NavLink className="nav-link" to="/">
                   Reviews
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/products">
+                <NavLink className="nav-link" to="/products">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
             <div className='d-flex fs-3 nav_display'>
               <div className=''>
-                <a
+                <NavLink
                   className="nav-link"
-                  href="/"
-                ><BsCart /></a>
+                  to={`/cart/${cu._id}`}
+                ><BsCart />
+                </NavLink>
               </div>
               <div className=''>
-                <a
-                  className="nav-link"
-                  href="/login"
-                ><CgProfile /></a>
+                {cu._id &&
+                  <>
+                    <NavLink
+                      className="nav-link"
+                      to={`/user-profile/${cu._id}`}
+                    ><CgProfile />
+                    </NavLink>
+                  </>
+                }
+                {!cu._id &&
+                  <NavLink
+                    className="nav-link btn login"
+                    to="/login"
+                  >
+                    Login
+                  </NavLink>
+                }
+
               </div>
             </div>
           </div>
           <div className='fs-3 d-lg-none d-block'>
-          <a className="navbar-brand" href="#">
-              <CgProfile/>
-            </a>
-            <a className="navbar-brand" href="#">
+            <NavLink className="navbar-brand" to="/">
+              <CgProfile />
+            </NavLink>
+            <NavLink className="navbar-brand" to="/">
               <BsCart />
-            </a>
-          </div>  
+            </NavLink>
+          </div>
         </div>
       </nav>
 

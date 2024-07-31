@@ -24,6 +24,20 @@ export const Users = () => {
       });
   }, [search]);
 
+  const updateStatus = (userId, newRole) => {
+    axios
+      .put(`${process.env.REACT_APP_BASE_URL}/updateUserStatus`, {
+        id: userId,
+        role: newRole,
+      })
+      .then(() => {
+        const updatedUsers = Users.map((user) =>
+          user._id === userId ? { ...user, role: newRole } : user);
+        setUsers(updatedUsers);
+        toast.success('User Status updated');
+      });
+  };
+
   const handleSearchInputChange = (e) => {
     setSearch(e.target.value);
   };
@@ -85,7 +99,7 @@ export const Users = () => {
                           <th>Sr #</th>
                           <th>Name</th>
                           <th>Email</th>
-                          {/* <th>Contact No</th> */}
+                          <th>Role</th>
                           <th>Date</th>
                           <th>Delete</th>
                         </tr>
@@ -96,7 +110,18 @@ export const Users = () => {
                             <td className='text-center'>{index + 1}</td>
                             <td>{data.name}</td>
                             <td >{data.email}</td>
-                            {/* <td>{data.number}</td> */}
+                            <td>
+                              <select
+                                className=''
+                                name=''
+                                id=''
+                                value={data.role}
+                                onChange={(e) => updateStatus(data._id, e.target.value)}
+                              >
+                                <option value='user'>User</option>
+                                <option value='admin'>Admin</option>
+                              </select>
+                            </td>
                             <td className='text-center'>{formatDateTime(data.date)}</td>
                             <td className='text-center'>
                               <button className='delete_btn' onClick={() => DeleteUser(data._id)}>

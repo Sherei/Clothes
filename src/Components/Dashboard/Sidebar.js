@@ -56,6 +56,7 @@ const Sidebar = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  let move = useNavigate()
 
   function Logout() {
     dispatch({
@@ -64,12 +65,10 @@ const Sidebar = () => {
     toast.success("Logout")
     move('/login');
   }
-  let move = useNavigate()
 
   return (
     <div className="container-fluid p-0 m-0">
       <div className='d-flex flex-nowrap'>
-
         <div style={{ width: isOpen ? '220px' : '50px' }} className="sidebar">
          
           <div className={`link mt-3 ${activeComponent === 'dashboard' ? 'active' : ''}`} onClick={() => handleMenuClick('dashboard')}>
@@ -164,11 +163,21 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="dashboard">
-          {activeComponent === 'dashboard' && <Dashboard />}
-          {activeComponent === 'orders' && <Orders />}
-          {activeComponent === 'users' && <Users />}
-          {activeComponent === 'product' && <Products />}
-          {activeComponent === 'comments' && <Comments />}
+          {activeComponent === 'dashboard' && 
+          <Dashboard />
+          }
+          {activeComponent === 'orders' && 
+          <Orders />
+          }
+          {activeComponent === 'users' && 
+          <Users />
+          }
+          {activeComponent === 'product'
+           && <Products />
+           }
+          {activeComponent === 'comments' &&
+           <Comments />
+           }
         </div>
       </div>
 
