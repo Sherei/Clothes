@@ -457,8 +457,7 @@ export const Cart = () => {
               <div className="cart_btns gap-2">
                 <a href="/Products/all">
                   <button
-                    className="btn review_btn px-4"
-                    style={{ backgroundColor: "#8B0000" }}
+                    className="button-submit px-4"
                   >
                     Continue Shopping
                   </button>
@@ -475,10 +474,10 @@ export const Cart = () => {
           ) : (
             <div className='d-flex flex-column justify-content-center align-items-center' style={{ height: "80vh" }}>
               <img src="/cart.png" alt="" style={{ width: "150px" }} />
-              <p className="fw-bolder mt-3" style={{ color: "rgb(2,2,94)" }}>Your Cart is Empty</p>
+              <p className="fw-bolder mt-3">Your Cart is Empty</p>
               <a href="/Products/all">
                 <button
-                  className="btn review_btn"
+                  className="button-submit px-4"
                 >
                   Shop our products
                 </button>

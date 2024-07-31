@@ -107,12 +107,14 @@
   }
   .register_btn{
     color: royalblue;
+    font-weight: 700;
+    font-size: 16px;
     border-bottom: 1px solid royalblue  ;
   }
       
 .title {
     font-size: 28px;
-    color: royalblue;
+    color: black;
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
@@ -129,13 +131,13 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: royalblue;
+    background-color: black;
   }
 
   .title::before {
     width: 18px;
     height: 18px;
-    background-color: royalblue;
+    background-color: black;
   }
 
   .title::after {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Benefits from '../Benefits/Benefits';
 import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router'
 import { useSelector, useDispatch } from 'react-redux';
@@ -152,21 +153,12 @@ export const Login = () => {
               </a>}
             </p>
           </form>
-          {/* <form >
-            
-              <label className="user-label ">Email *</label>
-            <div className="input-group mb-3">
-              <div>
-              <MdOutlineAlternateEmail />
-              <input
-                 />
-              </div>
-              {errors.email ? <div className='error'>Email is required </div> : null}
-            </div>
-           */}
+      
         </div>
       </div>
-
+      <div className='row '>
+                <Benefits />
+            </div>
     </div>
   </>
 

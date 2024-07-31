@@ -531,8 +531,7 @@ const Checkout = () => {
                         <p className="fw-bolder mt-3" style={{ color: "rgb(2,2,94)" }}>Your Cart is Empty</p>
                         <a href="/Products/all">
                             <button
-                                className="btn review_btn"
-                                style={{ width: "fit-content" }}
+                                className="button-submit px-4"
                             >
                                 Shop our products
                             </button>
